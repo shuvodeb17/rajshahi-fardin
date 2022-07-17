@@ -19,6 +19,7 @@ window.onscroll = () => {
 // navbar end here
 
 // Post start here
+var commentsInner = document.getElementById('comments-inner-one');
 var post = document.getElementById('post');
 var userPostMainOne = document.getElementById('user-post-main-one');
 var userPostMainTwo = document.getElementById('user-post-main-two');
@@ -34,6 +35,7 @@ normalPost.addEventListener('click', function () {
   topNavbar.style.display = 'none';
   userPostMainOne.style.display = 'none';
   userPostMainTwo.style.display = 'none';
+  commentsInner.style.display = 'none';
 
 })
 
@@ -49,5 +51,43 @@ closeBtn.addEventListener('click', function () {
   post.style.background = '#0080FF';
   post.classList.add('post-main-page')
   topNavbar.style.display = 'block';
+  commentsInner.style.display = 'block';
+  commentsInnerOne.style.display = 'none';
 });
 // post end here
+
+// Comments start here
+var commentsInnerOne = document.getElementById('comments-inner-one');
+commentsInnerOne.style.display = 'none';
+var navbarComment = document.getElementById('navbar');
+var postInputCom = document.getElementById('normal-post-input');
+var userPostComOne = document.getElementById('user-post-main-one');
+var userPostTwo = document.getElementById('user-post-main-two');
+var commentsBoxTwo = document.getElementById('comment-box-two');
+commentsBoxTwo.addEventListener('click', function(){
+  commentsInnerOne.style.display = 'block';
+  navbarComment.style.display = 'none';
+  postInputCom.style.display = 'none';
+  userPostComOne.style.display = 'none';
+  userPostTwo.style.display = 'none';
+});
+var commentsBoxOne = document.getElementById('user-post-main-one');
+commentsBoxOne.addEventListener('click', function(){
+  commentsInnerOne.style.display = 'block';
+  navbarComment.style.display = 'none';
+  postInputCom.style.display = 'none';
+  userPostComOne.style.display = 'none';
+  userPostTwo.style.display = 'none';
+});
+
+
+var commentBackBtn = document.getElementById('comment-back-btn');
+commentBackBtn.addEventListener('click', function(){
+  postInputCom.style.display = 'block';
+  navbarComment.style.display = 'block';
+  userPostComOne.style.display = 'block';
+  commentsInnerOne.style.display = 'none';
+  userPostTwo.style.display = 'block';
+
+});
+// Comments end here

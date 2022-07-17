@@ -203,8 +203,7 @@ input#normal-post-input {
   border-radius: 5px;
   padding: 1% 1%;
 }
-.title-sec {
-}
+
 .title-sec h4 {
   display: inline-block;
   color: #0080ff;
@@ -223,8 +222,7 @@ input#normal-post-input {
   -o-transition: all 0.2s;
   cursor: pointer;
 }
-#owner-info-post {
-}
+
 #owner-info-post img {
   width: 60px;
   height: 60px;
@@ -251,8 +249,6 @@ input#normal-post-input {
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
-}
-.button-area {
 }
 .button-area input {
   width: 100%;
@@ -309,8 +305,7 @@ input#normal-post-input {
   padding: 10px 20px;
   border-radius: 5px;
 }
-#user-post-main .user-post-child {
-}
+
 .user-info img {
   width: 67px;
   height: 67px;
@@ -352,8 +347,6 @@ input#normal-post-input {
 .comment:hover {
   background: #8a8787;
 }
-.user-post-child .comments-area i {
-}
 .create-post {
   display: flex;
   align-items: center;
@@ -380,3 +373,79 @@ input#normal-post-input {
 }
 
 /* user post end here */
+/* Comments inner start here */
+.comment-user-inner {
+  background: #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto;
+}
+.comments-inner-top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #b7b6b6;
+  margin-bottom: 3%;
+  padding: 10px 0px;
+}
+.comments-inner-top i {
+  font-size: 1.6rem;
+  background: #9f9797;
+  padding: 4px 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.comments-inner-top i:hover {
+  background: #797878;
+}
+.comments-inner-top p {
+  margin-bottom: 0px;
+  margin-left: 2%;
+}
+.comment-inner-user {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 9%;
+}
+.comment-inner-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+}
+.comment-inner-user p {
+}
+.comments-inner-input {
+  border-top: 1px solid #b7b6b6;
+  padding: 10px 0px;
+}
+.comments-inner-input .com-input {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.comments-inner-input .com-btn {
+  float: right;
+  border: none;
+  background: green;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.comments-inner-input .com-btn:hover {
+  background: rgb(10, 68, 10);
+}
+p.com-owner-name {
+  padding: 8px 47px;
+}
+/* Comments inner end here */

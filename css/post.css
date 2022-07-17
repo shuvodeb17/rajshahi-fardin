@@ -287,10 +287,22 @@ input#normal-post-input {
     width: 100%;
   }
 }
+@media screen and (max-width: 487px) {
+}
+
+.post-add {
+  height: 100vh;
+}
+.post-main-page {
+  height: auto;
+}
+.normal-input-auto {
+  margin: auto;
+}
 /* post end here */
 
 /* user post start here */
-#user-post-main {
+.user-post-main {
   margin: auto;
   margin-top: 4%;
   background: #ddd;
@@ -329,6 +341,7 @@ input#normal-post-input {
   background: #bdbdbd;
   margin-top: 1.4%;
   border-radius: 5px;
+  padding: 0px 5px;
   cursor: pointer;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;

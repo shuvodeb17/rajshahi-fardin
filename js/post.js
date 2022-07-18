@@ -64,7 +64,7 @@ var postInputCom = document.getElementById('normal-post-input');
 var userPostComOne = document.getElementById('user-post-main-one');
 var userPostTwo = document.getElementById('user-post-main-two');
 var commentsBoxTwo = document.getElementById('comment-box-two');
-commentsBoxTwo.addEventListener('click', function(){
+commentsBoxTwo.addEventListener('click', function () {
   commentsInnerOne.style.display = 'block';
   navbarComment.style.display = 'none';
   postInputCom.style.display = 'none';
@@ -72,7 +72,7 @@ commentsBoxTwo.addEventListener('click', function(){
   userPostTwo.style.display = 'none';
 });
 var commentsBoxOne = document.getElementById('user-post-main-one');
-commentsBoxOne.addEventListener('click', function(){
+commentsBoxOne.addEventListener('click', function () {
   commentsInnerOne.style.display = 'block';
   navbarComment.style.display = 'none';
   postInputCom.style.display = 'none';
@@ -80,14 +80,34 @@ commentsBoxOne.addEventListener('click', function(){
   userPostTwo.style.display = 'none';
 });
 
-
 var commentBackBtn = document.getElementById('comment-back-btn');
-commentBackBtn.addEventListener('click', function(){
+commentBackBtn.addEventListener('click', function () {
   postInputCom.style.display = 'block';
   navbarComment.style.display = 'block';
   userPostComOne.style.display = 'block';
   commentsInnerOne.style.display = 'none';
   userPostTwo.style.display = 'block';
-
 });
+
+
+
+// post show UI
+function commentSend() {
+  var commentInput = document.getElementById('comment-input').value;
+  console.log(commentInput);
+  var commentShowPage = document.getElementById('comment-show-page');
+
+  if (commentInput == '') {
+    alert('Write Something');
+  } else {
+    var newRow = document.createElement('div');
+    newRow.className = 'comment-inner-user';
+
+    var newTitle = document.createElement('p');
+    newTitle.innerHTML = commentInput;
+    newRow.appendChild(newTitle);
+    commentShowPage.appendChild(newRow);
+  }
+
+}
 // Comments end here

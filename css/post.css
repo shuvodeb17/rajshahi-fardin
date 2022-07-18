@@ -410,7 +410,7 @@ input#normal-post-input {
   background: #fff;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 9%;
+  margin-bottom: 2%;
 }
 .comment-inner-user img {
   width: 40px;
@@ -423,6 +423,7 @@ input#normal-post-input {
 .comments-inner-input {
   border-top: 1px solid #b7b6b6;
   padding: 10px 0px;
+  margin-top: 52vh;
 }
 .comments-inner-input .com-input {
   border: none;
